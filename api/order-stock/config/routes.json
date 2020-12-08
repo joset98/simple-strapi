@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/order-stocks",
+      "handler": "order-stock.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-stocks/count",
+      "handler": "order-stock.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-stocks/:id",
+      "handler": "order-stock.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/order-stocks",
+      "handler": "order-stock.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/order-stocks/:id",
+      "handler": "order-stock.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/order-stocks/:id",
+      "handler": "order-stock.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

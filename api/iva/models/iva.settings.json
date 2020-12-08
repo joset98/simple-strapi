@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ivas",
+  "info": {
+    "name": "iva"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "percent": {
+      "type": "float",
+      "required": true
+    }
+  }
+}

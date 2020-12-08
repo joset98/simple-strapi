@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subsidiaries",
+      "handler": "subsidiary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subsidiaries/count",
+      "handler": "subsidiary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subsidiaries/:id",
+      "handler": "subsidiary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subsidiaries",
+      "handler": "subsidiary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subsidiaries/:id",
+      "handler": "subsidiary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subsidiaries/:id",
+      "handler": "subsidiary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

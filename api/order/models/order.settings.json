@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "sub_total": {
+      "type": "float",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "PAGADO",
+        "ESPERA"
+      ],
+      "required": true
+    },
+    "approved_at": {
+      "type": "date",
+      "required": true
+    },
+    "user": {
+      "via": "orders",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "order_stocks": {
+      "via": "order",
+      "collection": "order-stock"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profits",
+  "info": {
+    "name": "profits",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "amount": {
+      "type": "float",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "ACTIVO",
+        "INACTIVO",
+        "PROCESADO"
+      ],
+      "required": true,
+      "default": "ACTIVO"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "profits"
+    }
+  }
+}

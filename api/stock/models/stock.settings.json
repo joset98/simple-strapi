@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stocks",
+  "info": {
+    "name": "stock",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "quantity": {
+      "type": "biginteger",
+      "required": true
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "discount": {
+      "type": "float"
+    },
+    "subsidiary": {
+      "model": "subsidiary",
+      "via": "stocks"
+    },
+    "product": {
+      "model": "product",
+      "via": "stocks"
+    },
+    "order_stocks": {
+      "via": "stock",
+      "collection": "order-stock"
+    }
+  }
+}
