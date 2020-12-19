@@ -26,9 +26,12 @@
       "default": "ACTIVO"
     },
     "user": {
+      "via": "profits",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "profits"
+      "model": "user"
+    },
+    "order_id": {
+      "model": "order"
     }
   }
 }

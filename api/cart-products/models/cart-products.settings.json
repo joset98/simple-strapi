@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cart_products",
+  "info": {
+    "name": "Cart_products",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_cart": {
+      "model": "cart",
+      "via": "cart_products"
+    },
+    "id_product": {
+      "model": "product",
+      "via": "cart_products"
+    }
+  }
+}

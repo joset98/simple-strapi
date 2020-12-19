@@ -36,6 +36,10 @@
     "stocks": {
       "via": "product",
       "collection": "stock"
+    },
+    "cart_products": {
+      "via": "id_product",
+      "collection": "cart-products"
     }
   }
 }

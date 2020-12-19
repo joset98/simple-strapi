@@ -22,10 +22,9 @@
       "via": "subsidiary",
       "collection": "stock"
     },
-    "users": {
-      "via": "subsidiary",
-      "plugin": "users-permissions",
-      "collection": "user"
+    "addresses": {
+      "via": "subsidiary_id",
+      "collection": "addresses"
     }
   }
 }

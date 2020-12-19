@@ -1,0 +1,34 @@
+{
+    "routes": [
+      {
+        "method": "POST",
+        "path": "/register",
+        "handler": "User.register",
+        "config": {
+          "policies": [],
+          "description": "Register a new user with the default role",
+          "tag": {
+            "name": "User",
+            "plugin": "users-permissions",
+            "actionType": "create"
+          }
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/users/register",
+        "handler": "User.register",
+        "config": {
+          "policies": [],
+          "prefix": "",
+          "description": "description",
+          "tag": {
+            "plugin": "users-permissions",
+            "name": "User",
+            "actionType": "create"
+          }
+        }
+      }
+    ]
+  }
+  

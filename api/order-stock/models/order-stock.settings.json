@@ -24,8 +24,8 @@
       "via": "order_stocks"
     },
     "order": {
-      "model": "order",
-      "via": "order_stocks"
+      "via": "order_stocks",
+      "model": "order"
     }
   }
 }

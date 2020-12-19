@@ -36,8 +36,8 @@
       "configurable": false
     },
     "profits": {
-      "via": "user",
-      "collection": "profits"
+      "collection": "profits",
+      "via": "user"
     },
     "person": {
       "model": "person",
@@ -48,10 +48,6 @@
       "collection": "order",
       "via": "user"
     },
-    "subsidiary": {
-      "model": "subsidiary",
-      "via": "users"
-    },
     "sponsoreds": {
       "plugin": "users-permissions",
       "collection": "user",
@@ -61,6 +57,13 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "sponsoreds"
+    },
+    "addresses": {
+      "collection": "addresses",
+      "via": "user_id"
+    },
+    "billing_address_id": {
+      "model": "addresses"
     }
   }
 }
