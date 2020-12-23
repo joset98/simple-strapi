@@ -11,10 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "sub_total": {
-      "type": "float",
-      "required": true
-    },
     "status": {
       "type": "enumeration",
       "enum": [
@@ -39,6 +35,16 @@
     "order_stocks": {
       "collection": "order-stock",
       "via": "order"
+    },
+    "order_coupons": {
+      "collection": "order-coupon",
+      "via": "order_id"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
     }
   }
 }

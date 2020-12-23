@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_coupons",
+  "info": {
+    "name": "order_coupon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "application_date": {
+      "type": "datetime"
+    },
+    "applicable_range": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "float"
+    },
+    "order_id": {
+      "via": "order_coupons",
+      "model": "order"
+    },
+    "coupon_id": {
+      "model": "coupon",
+      "via": "order_coupons"
+    },
+    "used_date": {
+      "type": "datetime"
+    }
+  }
+}

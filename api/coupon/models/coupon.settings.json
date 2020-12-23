@@ -20,8 +20,13 @@
     "type": {
       "type": "string"
     },
-    "use_date": {
-      "type": "datetime"
+    "tag_id": {
+      "model": "tag",
+      "via": "coupons"
+    },
+    "order_coupons": {
+      "via": "coupon_id",
+      "collection": "order-coupon"
     }
   }
 }

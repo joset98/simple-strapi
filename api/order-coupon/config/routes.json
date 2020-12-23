@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/order-coupons",
+      "handler": "order-coupon.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-coupons/count",
+      "handler": "order-coupon.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-coupons/:id",
+      "handler": "order-coupon.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/order-coupons",
+      "handler": "order-coupon.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/order-coupons/:id",
+      "handler": "order-coupon.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/order-coupons/:id",
+      "handler": "order-coupon.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

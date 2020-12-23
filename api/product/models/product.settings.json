@@ -40,6 +40,10 @@
     "cart_products": {
       "via": "id_product",
       "collection": "cart-products"
+    },
+    "tag_id": {
+      "via": "products",
+      "model": "tag"
     }
   }
 }

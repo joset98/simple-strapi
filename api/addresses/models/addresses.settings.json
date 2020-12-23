@@ -21,10 +21,14 @@
       "model": "subsidiary",
       "via": "addresses"
     },
-    "user_id": {
-      "via": "addresses",
+    "users": {
+      "via": "address_id",
       "plugin": "users-permissions",
-      "model": "user"
+      "collection": "user"
+    },
+    "state_id": {
+      "via": "addresses",
+      "model": "state"
     }
   }
 }

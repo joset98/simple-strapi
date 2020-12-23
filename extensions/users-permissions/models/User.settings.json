@@ -58,12 +58,9 @@
       "model": "user",
       "via": "sponsoreds"
     },
-    "addresses": {
-      "collection": "addresses",
-      "via": "user_id"
-    },
-    "billing_address_id": {
-      "model": "addresses"
+    "address_id": {
+      "model": "addresses",
+      "via": "users"
     }
   }
 }
