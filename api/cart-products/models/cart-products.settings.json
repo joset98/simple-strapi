@@ -11,12 +11,13 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "id_cart": {
-      "model": "cart",
-      "via": "cart_products"
+    "stock_id": {
+      "via": "cart_products",
+      "model": "stock"
     },
-    "id_product": {
-      "model": "product",
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
       "via": "cart_products"
     }
   }

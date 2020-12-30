@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "products",
   "info": {
-    "name": "product"
+    "name": "product",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -26,24 +27,20 @@
       "collection": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
         "files",
+        "images",
         "videos"
       ],
       "plugin": "upload",
-      "required": true
-    },
-    "stocks": {
-      "via": "product",
-      "collection": "stock"
-    },
-    "cart_products": {
-      "via": "id_product",
-      "collection": "cart-products"
+      "required": false
     },
     "tag_id": {
-      "via": "products",
-      "model": "tag"
+      "model": "tag",
+      "via": "products"
+    },
+    "stocks": {
+      "collection": "stock",
+      "via": "product_id"
     }
   }
 }

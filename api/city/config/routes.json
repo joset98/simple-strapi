@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/coins",
-      "handler": "coins.find",
+      "path": "/cities",
+      "handler": "city.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/coins/count",
-      "handler": "coins.count",
+      "path": "/cities/count",
+      "handler": "city.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/coins/:id",
-      "handler": "coins.findOne",
+      "path": "/cities/:id",
+      "handler": "city.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/coins",
-      "handler": "coins.create",
+      "path": "/cities",
+      "handler": "city.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/coins/:id",
-      "handler": "coins.update",
+      "path": "/cities/:id",
+      "handler": "city.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/coins/:id",
-      "handler": "coins.delete",
+      "path": "/cities/:id",
+      "handler": "city.delete",
       "config": {
         "policies": []
       }

@@ -19,13 +19,13 @@
       "type": "float",
       "required": true
     },
-    "stock": {
-      "model": "stock",
-      "via": "order_stocks"
-    },
     "order": {
       "via": "order_stocks",
       "model": "order"
+    },
+    "stock_id": {
+      "via": "order_stocks",
+      "model": "stock"
     }
   }
 }

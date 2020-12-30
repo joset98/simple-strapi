@@ -15,12 +15,16 @@
       "type": "string"
     },
     "products": {
-      "collection": "product",
-      "via": "tag_id"
-    },
-    "coupons": {
       "via": "tag_id",
-      "collection": "coupon"
+      "collection": "product"
+    },
+    "category_id": {
+      "via": "tags",
+      "model": "category"
+    },
+    "tag_coupons": {
+      "via": "tag_id",
+      "collection": "tag-coupon"
     }
   }
 }

@@ -17,18 +17,27 @@
     "reference_point": {
       "type": "text"
     },
-    "subsidiary_id": {
-      "model": "subsidiary",
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user",
       "via": "addresses"
     },
-    "users": {
-      "via": "address_id",
-      "plugin": "users-permissions",
-      "collection": "user"
+    "sector_id": {
+      "model": "sector",
+      "via": "addresses"
     },
-    "state_id": {
-      "via": "addresses",
-      "model": "state"
+    "description": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "is_default": {
+      "type": "boolean"
+    },
+    "orders": {
+      "via": "address_id",
+      "collection": "order"
     }
   }
 }

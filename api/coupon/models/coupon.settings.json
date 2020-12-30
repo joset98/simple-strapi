@@ -11,22 +11,18 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "value": {
-      "type": "float"
-    },
     "name": {
       "type": "string"
     },
     "type": {
       "type": "string"
     },
-    "tag_id": {
-      "model": "tag",
-      "via": "coupons"
-    },
-    "order_coupons": {
+    "tag_coupons": {
       "via": "coupon_id",
-      "collection": "order-coupon"
+      "collection": "tag-coupon"
+    },
+    "enabled": {
+      "type": "boolean"
     }
   }
 }

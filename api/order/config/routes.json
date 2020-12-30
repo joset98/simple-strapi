@@ -47,6 +47,22 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/hello",
+      "handler": "Order.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/orders/create",
+      "handler": "Order.generate",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }

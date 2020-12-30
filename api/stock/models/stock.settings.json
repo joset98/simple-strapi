@@ -22,17 +22,21 @@
     "discount": {
       "type": "float"
     },
-    "subsidiary": {
+    "subsidiary_id": {
       "model": "subsidiary",
       "via": "stocks"
     },
-    "product": {
-      "model": "product",
-      "via": "stocks"
+    "product_id": {
+      "via": "stocks",
+      "model": "product"
     },
     "order_stocks": {
-      "via": "stock",
-      "collection": "order-stock"
+      "collection": "order-stock",
+      "via": "stock_id"
+    },
+    "cart_products": {
+      "collection": "cart-products",
+      "via": "stock_id"
     }
   }
 }

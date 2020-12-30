@@ -5,4 +5,13 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {    
+
+    generate: ( data ) => {
+        const result = strapi.query('order').create(
+            data
+        );
+
+        return result; 
+    }
+};

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tag_coupons",
+  "info": {
+    "name": "tag_coupon",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "value": {
+      "type": "float"
+    },
+    "tag_id": {
+      "model": "tag",
+      "via": "tag_coupons"
+    },
+    "coupon_id": {
+      "model": "coupon",
+      "via": "tag_coupons"
+    },
+    "order_tag_coupons": {
+      "via": "tag_coupon_id",
+      "collection": "order-coupon"
+    }
+  }
+}

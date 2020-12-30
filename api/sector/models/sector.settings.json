@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "states",
+  "collectionName": "sectors",
   "info": {
-    "name": "state",
-    "description": ""
+    "name": "sector"
   },
   "options": {
     "increments": true,
@@ -14,13 +13,13 @@
     "name": {
       "type": "string"
     },
-    "country_id": {
-      "model": "country",
-      "via": "states"
+    "city_id": {
+      "model": "city",
+      "via": "sectors"
     },
-    "cities": {
-      "via": "state_id",
-      "collection": "city"
+    "addresses": {
+      "via": "sector_id",
+      "collection": "addresses"
     }
   }
 }

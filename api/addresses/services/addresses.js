@@ -5,4 +5,9 @@
  * to customize this service
  */
 
-module.exports = {};
+module.exports = {
+    findOne: (addressId, userId) => {
+        const results = strapi.query('addresses').findOne({ id: addressId, user_id: userId });        
+        return results; 
+    }
+};

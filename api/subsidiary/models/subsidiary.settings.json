@@ -19,12 +19,8 @@
       "type": "text"
     },
     "stocks": {
-      "via": "subsidiary",
-      "collection": "stock"
-    },
-    "addresses": {
       "via": "subsidiary_id",
-      "collection": "addresses"
+      "collection": "stock"
     }
   }
 }

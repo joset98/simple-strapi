@@ -2,7 +2,7 @@
   "kind": "collectionType",
   "collectionName": "order_coupons",
   "info": {
-    "name": "order_coupon",
+    "name": "order_tag_coupon",
     "description": ""
   },
   "options": {
@@ -24,12 +24,12 @@
       "via": "order_coupons",
       "model": "order"
     },
-    "coupon_id": {
-      "model": "coupon",
-      "via": "order_coupons"
-    },
     "used_date": {
       "type": "datetime"
+    },
+    "tag_coupon_id": {
+      "model": "tag-coupon",
+      "via": "order_tag_coupons"
     }
   }
 }

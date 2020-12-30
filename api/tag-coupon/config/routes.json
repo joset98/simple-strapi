@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/ivas",
-      "handler": "iva.find",
+      "path": "/tag-coupons",
+      "handler": "tag-coupon.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/ivas/count",
-      "handler": "iva.count",
+      "path": "/tag-coupons/count",
+      "handler": "tag-coupon.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/ivas/:id",
-      "handler": "iva.findOne",
+      "path": "/tag-coupons/:id",
+      "handler": "tag-coupon.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/ivas",
-      "handler": "iva.create",
+      "path": "/tag-coupons",
+      "handler": "tag-coupon.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/ivas/:id",
-      "handler": "iva.update",
+      "path": "/tag-coupons/:id",
+      "handler": "tag-coupon.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/ivas/:id",
-      "handler": "iva.delete",
+      "path": "/tag-coupons/:id",
+      "handler": "tag-coupon.delete",
       "config": {
         "policies": []
       }

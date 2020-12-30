@@ -39,15 +39,6 @@
       "collection": "profits",
       "via": "user"
     },
-    "person": {
-      "model": "person",
-      "via": "user"
-    },
-    "orders": {
-      "columnName": "user_id",
-      "collection": "order",
-      "via": "user"
-    },
     "sponsoreds": {
       "plugin": "users-permissions",
       "collection": "user",
@@ -58,9 +49,18 @@
       "model": "user",
       "via": "sponsoreds"
     },
-    "address_id": {
-      "model": "addresses",
-      "via": "users"
+    "cart_products": {
+      "via": "user_id",
+      "collection": "cart-products"
+    },
+    "addresses": {
+      "via": "user_id",
+      "collection": "addresses"
+    },
+    "orders": {
+      "via": "user_id",
+      "columnName": "user_id",
+      "collection": "order"
     }
   }
 }

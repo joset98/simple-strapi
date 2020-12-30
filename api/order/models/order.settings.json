@@ -27,10 +27,10 @@
       "type": "date",
       "required": true
     },
-    "user": {
-      "via": "orders",
+    "user_id": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "orders"
     },
     "order_stocks": {
       "collection": "order-stock",
@@ -45,6 +45,10 @@
     },
     "method": {
       "type": "string"
+    },
+    "address_id": {
+      "model": "addresses",
+      "via": "orders"
     }
   }
 }
